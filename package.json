@@ -1,0 +1,17 @@
+{
+  "name": "medtriage-ai",
+  "version": "2.0.0",
+  "private": true,
+  "description": "MedTriage AI - healthcare triage platform built on a four-layer architecture",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "seed": "node --disable-warning=ExperimentalWarning src/database/seed.js",
+    "reset": "rm -f data/medtriage.db && npm run seed"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
